@@ -15,7 +15,7 @@ interface UploadResult {
 function ImageUploadButton() {
     const router = useRouter();
 
-    const handleUploadSuccess = (result: UploadResult) => {
+    const handleUploadSuccess = (result: any) => {
         console.log("Upload Completed");
         setTimeout(() => {
             router.refresh();
